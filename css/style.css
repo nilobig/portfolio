@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{ 
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+  background:#f5f3f5;
+  font-weight:300;
+ }
+
+.nav-links {
+	 display:none;
+	 list-style-type:none;
+}
+
+.nav-links a{
+	 padding: 10px;
+	 font-size:17px;
+	 background:#59abe3;
+	 color:#fff;
+	 text-align:center;
+	 display:block;
+	 text-decoration:none;
+	 text-transform: uppercase;
+	 transition: all 2s ease;
+}
+
+.nav-links a:hover{
+	 background:#2c82c9;
+	 color:#000;
+}
+
+.nav-container{
+	 padding: 15px 40px;
+	 background:#2c3e50;
+	 border-bottom:4px solid #34495e;
+	 display:flex;
+	 justify-content: space-between;
+}
+
+.nav-container h3{
+	 font-size:25px;
+	 color:#fff;
+	 align-self: center;
+}
+
+.bar1,
+.bar2,
+.bar3{
+	width:25px;
+	height:3px;
+	margin:5px;
+	background:#59abe3;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.btn{ 
+   padding:2px;
+   border:2px solid #59abe3;
+   cursor:pointer;
+   display: inline-block;
+   align-self:center;
+ }
+
+ .change .bar1{
+ 	 transform: rotate(-45deg) translate(-7px, 6px);
+ }
+
+ .change .bar2{
+ 	 opacity:0;
+ }
+
+  .change .bar3{
+ 	 transform: rotate(45deg) translate(-7px, -8px);
+ }
+
+ /*################################################## HEADER ##################################################*/
+ header{
+ 	 background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/header-bcg.jpeg') center/cover fixed no-repeat;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+ }
+
+ nav{
+ 	 flex: 0 0 auto;
+ }
+
+ .banner{
+ 	 flex: 1 0 auto;
+ 	 display:flex;
+ 	 align-items: center;
+ 	 justify-content: center;
+ }
+ 
+ .bannerInfo {
+ 	 flex: 0 0 90%;
+ 	 text-align:center;
+
+ }
+ .bannerInfo h1{
+ 	 font-size: 40px;
+ 	 color:#fff;
+ 	 margin: 0 0 10px 0;
+ 	 font-style:italic;
+}
+
+.bannerInfo h3{
+	 color:#59abe3;
+	 font-size:18px;
+	 letter-spacing: 4px;
+}
+.bannerInfo .bannerSocial {
+	 margin-top:10px;
+
+}
+.bannerInfo .bannerSocial a{
+	 color:#fff;
+	 font-size:25px;
+	 margin-left:15px;	 
+	 padding:5px 10px;
+	 transition: background 2s ease;
+	 border-radius: 50%;
+}
+.bannerInfo .bannerSocial a:hover{
+	  background:#f5f3f5;
+}
+.bannerInfo .bannerSocial .fa-facebook{
+	color:#4267B2;
+}
+
+.bannerInfo .bannerSocial .fa-instagram{
+	color:#363636;
+}
+
+.bannerInfo .bannerSocial .fa-youtube{
+   color:#FF2500;
+}
+.bannerInfo .bannerSocial .fa-linkedin{
+	color: #0077B5;
+}
+
+
+@media screen and (min-width:992px){
+     
+     .btn{
+     	 display:none;
+     }
+
+     nav{
+     	 display:flex;
+     	 flex-wrap:wrap;
+     	 justify-content: space-around;
+     }
+
+     .nav-container{
+     	 flex: 0 0 auto;
+     	 background: transparent;
+     	 border:none;
+     }
+
+     .nav-links {
+     	 display:flex !important;
+     	 padding:0 40px;
+     	 flex: 1 0 auto;
+     	 justify-content: flex-end;
+     	 align-self:center;
+     }
+     .nav-links a{
+     	 background: transparent;
+     	 text-align:center;
+     	 border-radius:5px;
+     	 padding: 5px 10px;
+     	 margin-right:10px;
+     }
+     .nav-links a:hover{
+     	 padding-left:10px;
+     }
+}
+
+nav{
+	width:100%;
+	z-index:10px;
+	position:fixed;
+	transition: background 2s ease;
+}
+
+.navBackground{
+	 background:rgba(0,0,0,0.5);
+}
+
+
+/*################################################## About ##################################################*/
+.about{
+	 padding:40px;
+}
+.title{
+    text-align:center;
+    margin: 20px 0;
+}
+.title h2{
+	 font-size:34px;
+}
+
+.title-border{
+	 width: 80px;
+	 border:2px solid #59abe3;
+	 margin:0 auto;
+
+}
+
+
+
+.about-center{
+	text-align:center;
+	margin:30px 0;
+	width:90%;
+}
+
+.about-info img{
+	 width:50%;
+	 margin-bottom:15px;
+	 border-radius:50%;
+
+}
+
+.about-info p{
+	text-transform: capitalize;
+	margin:10px 0;
+	font-size:15px;
+   text-align:justify;
+}
+
+.about-social{
+	 font-size:25px;
+	 margin-right:25px;
+	 margin-bottom:10px;
+
+}
+
+.about-social .fa-facebook{
+	color:#4267B2;
+}
+
+.about-social .fa-instagram{
+	color:#363636;
+}
+
+.about-social .fa-youtube{
+   color:#FF2500;
+}
+
+.about-social .fa-linkedin{
+	color: #0077B5;
+}
+
+@media screen and (min-width:776px){
+     
+      .about-center{
+      	 display:flex;
+      	 flex-wrap:wrap;
+      	 justify-content: space-between;
+      }
+      .about-info img{
+      	 width:250px;
+      }
+      .about-info{
+      	  flex: 0 0 calc(50% - 20px);
+      }
+
+}
+
+/*################################################## Services ##################################################*/
+.services{
+	 padding:40px;
+	 background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/services-bcg.jpeg) center/cover fixed no-repeat;
+ color:#f5f3f5;
+}
+
+.services-center{
+	 margin:30px 0;
+	 text-align:center;
+	 width:90%;
+}
+
+.service .fas{
+	 color:#59abe3;
+	 font-size:40px;
+	 transition: background 2s ease;
+	 padding:10px 20px;
+	 border-radius:50%;
+}
+.service .fas:hover{
+	  background: #f5f3f5;
+}
+
+.service h3{
+	 font-size:25px;
+	 font-style:italic;
+	 margin:15px 0;
+}
+
+.service p{
+	 text-transform: capitalize;
+	 margin:10px 0;
+}
+
+@media screen and (min-width:776px){
+
+     .services-center{
+     	  display:flex;
+     	  flex-wrap:wrap;
+     	  justify-content: space-between;
+     }
+
+     .service{
+     	 flex: 0 0 calc(50% - 20px);
+     }
+}
+
+@media screen and (min-width:992px){
+
+ 
+     .service{
+     	 flex: 0 0 calc(25% - 1px);
+         margin: 0;
+         padding:10px;
+     }
+}
+
+/*################################################## Portfolio ##################################################*/
+.portfolio{
+	 padding:40px;
+}
+
+.portfolio-center{
+	 margin:30px 0;
+	 text-align:center;
+
+}
+
+.portfolio-project{
+	margin-bottom:30px;
+
+}
+
+.portfolio-project img{
+	width:100%;
+	height:200px;
+    background: rgba(0,0,0,0.5);
+}
+.portfolio-project img:hover{
+
+}
+
+.portfolio-info{
+     font-size:14px;
+      display:flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      margin: 10px 0;
+}
+.portfolio-info h3{
+	 font-size:24px;
+}
+.portfolio-info a{
+	display: inline-block;
+	 text-decoration:none;
+	 color:#59abe3;
+	 border:1px solid #59abe3;
+	 padding: 10px;
+     font-weight:600;
+     transition: background 2s ease, color 2s ease;
+}
+
+.portfolio-info a:hover{
+	 background: #59abe3;
+	 color:#fff;
+}
+
+@media screen and (min-width:776px){
+        
+        .portfolio-center{
+        	 display:flex;
+        	 flex-wrap:wrap;
+        	 justify-content: space-between;
+        }
+        .portfolio-project{
+        	 flex: 0 0 calc(50% - 20px);
+        }
+
+}
+
+
+
+@media screen and (min-width:992px){
+      
+    
+        .portfolio-project{
+        	 flex: 0 0 calc(33.3% - 20px);
+        }
+
+}
+
+/*################################################## Counters ##################################################*/
+.counters{
+	 padding:40px;
+	 background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/counter-bcg.jpeg) center/cover fixed no-repeat;
+}
+
+.counters-center{
+	 margin: 0 auto;
+	 width:90%;
+	 text-align:center;
+}
+.counter{
+	 margin: 30px 0;
+	 color:#f5f3f5;
+	 font-style:italic;
+}
+
+.counter h3{
+	 font-size:25px;
+	 margin:10px 0 15px 0;
+}
+
+.counter .fas, .counter .far{
+     font-size:40px;
+     color:#59abe3;
+}
+
+.counter p{
+	 letter-spacing: 5px;
+	 text-transform: capitalize;
+}
+
+@media screen and (min-width:320px){
+      
+      .counters-center{
+      	 display:flex;
+      	 flex-wrap:wrap;
+      	 justify-content: space-between;
+      }
+
+      .counter{
+      	 flex: 0 0 calc(50% - 20px);
+      }
+
+}
+
+@media screen and (min-width:992px){
+     
+       .counter{
+      	 flex: 0 0 calc(25% - 20px);
+      }
+
+}
+
+/*################################################## Counters ##################################################*/
+.quote{
+	 padding:40px;	 
+}
+.quote-center{
+	 margin:30px 0;
+	 text-align:center;
+	 width:90%;
+	 color:#59abe3;
+}
+
+.quote p{
+	 font-size:25px;
+	 display:inline-block;
+}
+
+.fa-quote-left{
+	 margin-right:30px;
+}
+
+.fa-quote-right{
+	 margin-left:30px;
+}
+
+/*################################################## Contact/Footer ##################################################*/
+.contact{ 
+  padding:40px;
+  background:#2e3131;
+  color:#fff;
+ }
+
+ .contact  .title-border{
+ 	 border-color:#fff;
+ 	 margin-bottom:30px;
+ }
+
+ .contact-center{
+ 	 margin: 0 auto;
+ 	 width:90%;
+ 	 text-align:center;
+ }
+
+.contact-form input, textarea{
+	 display:inline-block;
+	 color:#59abe3;	
+	 border:none;
+	 padding: 20px;
+	 border-bottom:2px solid #fff;
+	 font-size:15px;
+	 border-radius:5px;
+
+}
+.contact-form input::placeholder, .contact textarea::placeholder{
+	color:#59abe3;
+}
+
+.contact-form input {
+	 width:100%;
+	 height:40px;
+	 margin-bottom:10px;
+}
+.contact-form textarea{
+	 width:100%;
+	 height:200px;
+	 margin-bottom:10px;
+}
+.contact-form .btn-contact{
+	 border:2px solid #fff;
+	 background: transparent;
+	 color:#f5f3f5;
+	 font-size:24px;
+	 width:100%;
+	 padding:  5px 0;
+	 border-radius:5px;
+	 transition: background 2s ease, border 2s ease;
+	 margin-bottom: 20px;
+	}
+contact-form .btn-contact:hover{
+	 background:#59abe3;
+	 border-color:#59abe3;
+}	
+
+.contact-info{
+  width:100%;
+   display:inline-block;
+  margin-bottom:20px;
+  }
+  .contact-info i{
+  	  width:100%;
+  	  display:block;
+  	  font-size:25px;
+  	  margin-bottom:10px;
+  }
+.contact-info span{
+	 font-size:16px;
+	 padding:5px;
+	 font-style:italic;
+	 text-transform: uppercase;
+	 font-weight:400;
+}
+
+.copyright{
+	 background:#59abe3;
+     color:#fff;
+     font-size:16px;
+     padding:20px;
+     text-align:center;
+     font-style: italic;
+   
+}
+
+.copyright span{
+	font-weight:600;
+}
+
+@media screen and (min-width:992px){
+       
+       .contact-center{
+       	 display:flex;
+       	 flex-wrap: wrap;
+       	 justify-content: space-between;
+       }
+
+       .contact-form, .contact-user {
+          flex: 0 0 calc(50% - 20px);
+       }
+
+}
